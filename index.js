@@ -4,6 +4,7 @@ const { uuid } = require('uuidv4');
 const port = process.env.PORT || 3000;
 
 const app = express();
+const teste = '2';
 
 // informar que nossa api vai recber informações no formato JSON
 app.use(express.json());
