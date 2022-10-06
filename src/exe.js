@@ -1,3 +1,2 @@
 const teste = '2';
-
-// console.info(teste);
+console.info(teste);
