@@ -24,7 +24,7 @@ describe('Teste GET', () => {
 // eslint-disable-next-line no-undef
 describe('Teste POST ', () => {
     // eslint-disable-next-line no-undef
-    it('deve criar um autor', done => {
+    it('deve criar um autoro', done => {
         const game = {
             title: 'teste',
             owner: 'Lucas teste',
