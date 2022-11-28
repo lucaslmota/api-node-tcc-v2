@@ -48,7 +48,7 @@ describe('Teste POST ', () => {
 // eslint-disable-next-line no-undef
 describe('Teste GET/:id', () => {
     // eslint-disable-next-line no-undef
-    it('Teste buscando por id', done => {
+    it('Teste buscando por id teste', done => {
         const id = '917bd99c-1bb4-40d4-bf38-858a718c1118';
         chai.request(app)
             .get(`/projects/${id}`)
