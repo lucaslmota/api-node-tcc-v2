@@ -1,0 +1,33 @@
+
+Request: GET / at Fri Feb 24 2023 12:40:37 GMT-0300, IP: ::1, User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.50
+Response: 404 4.653 ms 
+
+Request: POST /projects at Fri Feb 24 2023 12:50:32 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: insomnia/2022.7.4
+Request Body:
+{
+	"title": "teste",
+	"owner": "lucas"
+}
+Response Body:
+[
+	{
+		"id": "ff9b93fb-2a8e-4328-b13a-9a1d0a854ab3",
+		"title": "teste",
+		"owner": "lucas"
+	}
+]
+Response: 200 3.117 ms 
+
+Request: GET / at Fri Feb 24 2023 13:03:07 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: insomnia/2022.7.4
+Response: 404 0.526 ms 
+
+Request: GET /projects at Fri Feb 24 2023 13:03:32 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: insomnia/2022.7.4
+Response Body:
+[
+	{
+		"id": "ff9b93fb-2a8e-4328-b13a-9a1d0a854ab3",
+		"title": "teste",
+		"owner": "lucas"
+	}
+]
+Response: 200 0.618 ms 

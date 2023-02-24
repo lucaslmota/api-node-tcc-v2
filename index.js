@@ -1,12 +1,26 @@
 const express = require('express');
 const { uuid } = require('uuidv4');
+const bodyParser = require('body-parser');
+const morganBody = require('morgan-body');
+const fs = require('fs');
+const path = require('path');
 
 const port = process.env.PORT || 3000;
 
 const app = express();
 
 // informar que nossa api vai recber informações no formato JSON
-app.use(express.json());
+app.use(express.json(), bodyParser.json());
+
+const log = fs.createWriteStream(
+    path.join(__dirname, './logs', 'express.log'),
+    { flags: 'a' },
+);
+
+morganBody(app, {
+    noColors: true,
+    stream: log,
+});
 
 const projects = [];
 
