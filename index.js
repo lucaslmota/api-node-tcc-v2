@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000;
 
 const app = express();
 
-// informar que nossa api vai recber informações no formato JSON teste
+// informar que nossa api vai recber informações no formato JSON
 app.use(express.json(), bodyParser.json());
 
 const log = fs.createWriteStream(
@@ -25,6 +25,7 @@ morganBody(app, {
 const projects = [];
 
 app.get('/projects', (request, response) => {
+    // const { title, owner } = request.query;
     response.json(projects);
 });
 
