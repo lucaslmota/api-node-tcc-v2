@@ -26,6 +26,7 @@ const projects = [];
 
 app.get('/projects', (request, response) => {
     // const { title, owner } = request.query;
+    response.send('Teste');
     response.json(projects);
 });
 
