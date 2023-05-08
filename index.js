@@ -25,7 +25,7 @@ morganBody(app, {
 const projects = [];
 
 app.get('/projects', (request, response) => {
-    // const { title, owner } = request.query;
+    // const { title, owner } = request.query ;
     response.json(projects);
 });
 
