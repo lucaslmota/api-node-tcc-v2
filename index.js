@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000;
 
 const app = express();
 
-// informar que nossa api vai recber informações no formato JSON
+// informar que nossa api vai recber informações no formato JSON teste
 app.use(express.json(), bodyParser.json());
 
 const log = fs.createWriteStream(
