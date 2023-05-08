@@ -21,7 +21,6 @@ jobs:
     - uses: sibiraj-s/action-eslint@v2
       with:
           extensions: 'jsx,ts,tsx'
-          annotations: true
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
