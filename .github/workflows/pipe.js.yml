@@ -21,7 +21,7 @@ jobs:
     - uses: sibiraj-s/action-eslint@v2
       with:
           eslint-args: '--ignore-path=.gitignore --quiet'
-          extensions: 'js,jsx,ts,tsx'
+          extensions: 'jsx,ts,tsx'
           annotations: true
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
