@@ -8,7 +8,7 @@ on:
       - develop
       - 'releases/**'
   pull_request:
-    branches: [ main ]
+    branches: [opened, synchronize, reopened]
 
 jobs:
   sonarqube:
