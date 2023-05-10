@@ -1,13 +1,5 @@
 name: Build
-on: 
-    push:
-        branches:
-            - main
-            - master
-            - develop
-            - 'releases/**'
-    pull_request:
-      branches: [ main ]
+on: push
 
 jobs:
  
@@ -16,9 +8,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
         with:
           fetch-depth: 0
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Install dependencies
+        run: yarn install
+     
       - name: SonarQube Scan
         uses: sonarsource/sonarqube-scan-action@master
         env:
